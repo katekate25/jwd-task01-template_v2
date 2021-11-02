@@ -1,25 +1,25 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <appliances>
     <oven>
-        <price>100</price>
+        <id>101</id>
         <power_consumption>1000</power_consumption>
         <weight>10</weight>
         <capacity>32</capacity>
         <depth>60</depth>
-        <height>45.5</height>
-        <width>59.5</width>
+        <height>45</height>
+        <width>59</width>
     </oven>
     <oven>
-        <price>200</price>
+        <id>102</id>
         <power_consumption>1500</power_consumption>
         <weight>12</weight>
         <capacity>33</capacity>
         <depth>60</depth>
         <height>45</height>
-        <width>60</width>
+        <width>68</width>
     </oven>
     <oven>
-        <price>300</price>
+        <id>103</id>
         <power_consumption>2000</power_consumption>
         <weight>11</weight>
         <capacity>33</capacity>
@@ -29,32 +29,35 @@
     </oven>
 
     <laptop>
-        <price>750</price>
-        <battery_capacity>100</battery_capacity>
+        <id>201</id>
+        <battery_capacity>1</battery_capacity>
         <os>WINDOWS</os>
         <memory_rom>4000</memory_rom>
-        <cpu>AMD_RYZEN_9_5900X</cpu>
-        <display_inches>15.5</display_inches>
+        <system_memory>1000</system_memory>
+        <cpu>1.2</cpu>
+        <display_inches>22</display_inches>
     </laptop>
     <laptop>
-        <price>1000</price>
-        <battery_capacity>2000</battery_capacity>
-        <os>MACOS</os>
-        <memory_rom>16000</memory_rom>
-        <cpu>INTEL_CORE_I5_11600K</cpu>
-        <display_inches>13.6</display_inches>
-    </laptop>
-    <laptop>
-        <price>2000</price>
-        <battery_capacity>4000</battery_capacity>
+        <id>202</id>
+        <battery_capacity>1.5</battery_capacity>
         <os>LINUX</os>
-        <memory_rom>4000</memory_rom>
-        <cpu>AMD_RYZEN_5_5600X</cpu>
-        <display_inches>17</display_inches>
+        <memory_rom>8000</memory_rom>
+        <system_memory>1000</system_memory>
+        <cpu>2.2</cpu>
+        <display_inches>19</display_inches>
+    </laptop>
+    <laptop>
+        <id>203</id>
+        <battery_capacity>3</battery_capacity>
+        <os>WINDOWS</os>
+        <memory_rom>8000</memory_rom>
+        <system_memory>1500</system_memory>
+        <cpu>3.2</cpu>
+        <display_inches>22</display_inches>
     </laptop>
 
     <refrigerator>
-        <price>1000</price>
+        <id>301</id>
         <power_consumption>100</power_consumption>
         <weight>20</weight>
         <freezer_capacity>10</freezer_capacity>
@@ -63,85 +66,97 @@
         <width>70</width>
     </refrigerator>
     <refrigerator>
-        <price>1400</price>
+        <id>302</id>
         <power_consumption>150</power_consumption>
-        <weight>25</weight>
-        <freezer_capacity>20</freezer_capacity>
-        <overall_capacity>350</overall_capacity>
-        <height>150</height>
-        <width>50</width>
+        <weight>30</weight>
+        <freezer_capacity>15</freezer_capacity>
+        <overall_capacity>300</overall_capacity>
+        <height>180</height>
+        <width>80</width>
     </refrigerator>
     <refrigerator>
-        <price>1300</price>
+        <id>303</id>
         <power_consumption>150</power_consumption>
-        <weight>40</weight>
+        <weight>35</weight>
         <freezer_capacity>20</freezer_capacity>
-        <overall_capacity>400</overall_capacity>
-        <height>300</height>
-        <width>150</width>
+        <overall_capacity>350.5</overall_capacity>
+        <height>250</height>
+        <width>75</width>
     </refrigerator>
 
     <vacuumCleaner>
-        <price>1300</price>
+        <id>401</id>
         <power_consumption>100</power_consumption>
         <filter_type>A</filter_type>
-        <bag_type>A1</bag_type>
+        <bag_type>A2</bag_type>
         <wand_type>ALL_IN_ONE</wand_type>
-        <motor_soeed_regulation>3000</motor_soeed_regulation>
+        <motor_speed_regulation>3000</motor_speed_regulation>
         <cleaning_width>20</cleaning_width>
     </vacuumCleaner>
     <vacuumCleaner>
-        <price>1000</price>
-        <power_consumption>150</power_consumption>
+        <id>402</id>
+        <power_consumption>110</power_consumption>
         <filter_type>B</filter_type>
-        <bag_type>B1</bag_type>
-        <wand_type>LONG</wand_type>
-        <motor_soeed_regulation>2500</motor_soeed_regulation>
+        <bag_type>AA-89</bag_type>
+        <wand_type>ALL_IN_ONE</wand_type>
+        <motor_speed_regulation>2900</motor_speed_regulation>
+        <cleaning_width>25</cleaning_width>
+    </vacuumCleaner>
+    <vacuumCleaner>
+        <id>403</id>
+        <power_consumption>90</power_consumption>
+        <filter_type>C</filter_type>
+        <bag_type>XXOO</bag_type>
+        <wand_type>ALL_IN_ONE</wand_type>
+        <motor_speed_regulation>2950</motor_speed_regulation>
         <cleaning_width>30</cleaning_width>
     </vacuumCleaner>
 
     <tabletPC>
-        <price>1000</price>
-        <battery_capacity>400</battery_capacity>
-        <display_inches>10</display_inches>
+        <id>501</id>
+        <battery_capacity>3</battery_capacity>
+        <display_inches>14</display_inches>
         <memory_rom>8000</memory_rom>
         <flash_memory_capacity>2</flash_memory_capacity>
-        <color>GREEN</color>
+        <color>BLUE</color>
     </tabletPC>
     <tabletPC>
-        <price>2000</price>
-        <battery_capacity>300</battery_capacity>
-        <display_inches>13</display_inches>
-        <memory_rom>9000</memory_rom>
-        <flash_memory_capacity>4</flash_memory_capacity>
+        <id>502</id>
+        <battery_capacity>4</battery_capacity>
+        <display_inches>15</display_inches>
+        <memory_rom>8000</memory_rom>
+        <flash_memory_capacity>6</flash_memory_capacity>
         <color>RED</color>
     </tabletPC>
     <tabletPC>
-        <price>1600</price>
-        <battery_capacity>400</battery_capacity>
-        <display_inches>15</display_inches>
-        <memory_rom>12000</memory_rom>
-        <flash_memory_capacity>6</flash_memory_capacity>
-        <color>BLUE</color>
+        <id>503</id>
+        <battery_capacity>5</battery_capacity>
+        <display_inches>16</display_inches>
+        <memory_rom>16000</memory_rom>
+        <flash_memory_capacity>8</flash_memory_capacity>
+        <color>GREEN</color>
     </tabletPC>
 
     <speakers>
-        <price>300</price>
+        <id>601</id>
         <power_consumption>15</power_consumption>
         <number_of_speakers>2</number_of_speakers>
         <cord_length>2</cord_length>
+        <frequency_range>2-4</frequency_range>
     </speakers>
     <speakers>
-        <price>400</price>
-        <power_consumption>16</power_consumption>
+        <id>602</id>
+        <power_consumption>20</power_consumption>
         <number_of_speakers>3</number_of_speakers>
         <cord_length>3</cord_length>
+        <frequency_range>3-4</frequency_range>
     </speakers>
     <speakers>
-        <price>350</price>
+        <id>603</id>
         <power_consumption>17</power_consumption>
         <number_of_speakers>4</number_of_speakers>
         <cord_length>4</cord_length>
+        <frequency_range>2-3.5</frequency_range>
     </speakers>
 
 </appliances>

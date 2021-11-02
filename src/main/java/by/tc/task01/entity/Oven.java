@@ -10,7 +10,7 @@ public class Oven implements Appliance {
     private Integer weight;
     private Integer depth;
     private Integer height;
-    private Double width;
+    private Integer width;
 
     public String getId() {
         return id;
@@ -60,11 +60,11 @@ public class Oven implements Appliance {
         this.height = height;
     }
 
-    public Double getWidth() {
+    public Integer getWidth() {
         return width;
     }
 
-    public void setWidth(Double width) {
+    public void setWidth(Integer width) {
         this.width = width;
     }
 

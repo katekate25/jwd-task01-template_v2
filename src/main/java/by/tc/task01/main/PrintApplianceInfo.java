@@ -1,17 +1,19 @@
 package by.tc.task01.main;
 
+import java.util.List;
+
 import by.tc.task01.entity.Appliance;
 
 public class PrintApplianceInfo {
-	
-	public static void print(Appliance appliance) {
-		if (appliance == null)
-		{
+
+	private PrintApplianceInfo() {}
+
+	public static void print(List<Appliance> appliances) {
+		if (appliances == null || appliances.isEmpty() ) {
 			System.out.println("Nothing found");
 		}
-		else
-		{
-			System.out.println(appliance);
+		else {
+			appliances.forEach(System.out::println);
 		}
 	}
 

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="appliances">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="oven" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="power_consumption" type="xs:integer"/>
+                            <xs:element name="weight" type="xs:integer"/>
+                            <xs:element name="capacity" type="xs:integer"/>
+                            <xs:element name="depth" type="xs:integer"/>
+                            <xs:element name="height" type="xs:integer"/>
+                            <xs:element name="width" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="laptop" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="battery_capacity" type="xs:double"/>
+                            <xs:element name="os" type="xs:string"/>
+                            <xs:element name="memory_rom" type="xs:integer"/>
+                            <xs:element name="system_memory" type="xs:integer"/>
+                            <xs:element name="cpu" type="xs:double"/>
+                            <xs:element name="display_inches" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="refrigerator" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="power_consumption" type="xs:integer"/>
+                            <xs:element name="weight" type="xs:integer"/>
+                            <xs:element name="freezer_capacity" type="xs:integer"/>
+                            <xs:element name="overall_capacity" type="xs:double"/>
+                            <xs:element name="height" type="xs:integer"/>
+                            <xs:element name="width" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="vacuumCleaner" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="power_consumption" type="xs:integer"/>
+                            <xs:element name="filter_type" type="xs:string"/>
+                            <xs:element name="bag_type" type="xs:string"/>
+                            <xs:element name="wand_type" type="xs:string"/>
+                            <xs:element name="motor_speed_regulation" type="xs:integer"/>
+                            <xs:element name="cleaning_width" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabletPC" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="battery_capacity" type="xs:integer"/>
+                            <xs:element name="display_inches" type="xs:integer"/>
+                            <xs:element name="memory_rom" type="xs:integer"/>
+                            <xs:element name="flash_memory_capacity" type="xs:integer"/>
+                            <xs:element name="color" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="speakers" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="power_consumption" type="xs:integer"/>
+                            <xs:element name="number_of_speakers" type="xs:integer"/>
+                            <xs:element name="cord_length" type="xs:integer"/>
+                            <xs:element name="frequency_range" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
