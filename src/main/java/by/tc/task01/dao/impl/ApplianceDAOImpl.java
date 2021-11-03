@@ -71,6 +71,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 
     @Override
     public boolean add(Appliance appliance) {
+        validateXMLAgainstXSD();
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder;
         try(InputStream appliancesXmlIS = getClass().getClassLoader().getResourceAsStream(APPLIANCES_XML_FILE_NAME)) {
