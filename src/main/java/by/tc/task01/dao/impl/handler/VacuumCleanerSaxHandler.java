@@ -6,18 +6,12 @@ import org.xml.sax.Attributes;
 import java.util.Arrays;
 import java.util.List;
 
+import static by.tc.task01.dao.impl.constant.XmlElementConstants.*;
+
 /**
  * VacuumCleanerSaxHandler
  */
 public class VacuumCleanerSaxHandler extends AbstractAppliancesSaxHandler {
-    private static final String VACUUM_CLEANER_ELEMENT = "vacuumCleaner";
-    private static final String ID_ELEMENT = "id";
-    private static final String FILTER_TYPE_ELEMENT = "filter_type";
-    private static final String POWER_CONSUMPTION_ELEMENT = "power_consumption";
-    private static final String BAG_TYPE_ELEMENT = "bag_type";
-    private static final String WAND_TYPE_ELEMENT = "wand_type";
-    private static final String MOTOR_SPEED_REGULATION_ELEMENT = "motor_speed_regulation";
-    private static final String CLEANING_WIDTH_ELEMENT = "cleaning_width";
 
     private boolean isVacuumCleanerElement = false;
     private boolean isReadValue = false;

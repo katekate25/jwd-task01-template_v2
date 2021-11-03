@@ -27,4 +27,10 @@ public class ApplianceServiceImpl implements ApplianceService
 		return applianceDAO.find(criteria);
 	}
 
+	@Override
+	public boolean add(Appliance appliance) {
+		return applianceDAO.add(appliance);
+	}
+
+
 }

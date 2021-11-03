@@ -7,23 +7,19 @@ import org.xml.sax.Attributes;
 import java.util.Arrays;
 import java.util.List;
 
+import static by.tc.task01.dao.impl.constant.XmlElementConstants.*;
+
 /**
  * SpeakersSaxHandler
  */
 public class SpeakersSaxHandler extends AbstractAppliancesSaxHandler {
-    private static final String SPEAKERS_ELEMENT = "speakers";
-    private static final String ID_ELEMENT = "id";
-    private static final String POWER_CONSUMPTION_ELEMENT = "power_consumption";
-    private static final String NUMBER_OF_SPEAKERS_ELEMENT = "number_of_speakers";
-    private static final String FREQUENCY_RANGE_ELEMENT = "frequency_range";
-    private static final String CORD_LENGTH_ELEMENT = "cord_length";
 
     private boolean isSpeakersElement = false;
     private boolean isReadValue = false;
     private String currentValue = null;
     private Speakers currentElement = null;
-    private List<String> supportedElements = Arrays.asList(ID_ELEMENT, POWER_CONSUMPTION_ELEMENT, NUMBER_OF_SPEAKERS_ELEMENT,
-            FREQUENCY_RANGE_ELEMENT, CORD_LENGTH_ELEMENT);
+    private List<String> supportedElements = Arrays.asList(ID_ELEMENT, POWER_CONSUMPTION_ELEMENT,
+            NUMBER_OF_SPEAKERS_ELEMENT, FREQUENCY_RANGE_ELEMENT, CORD_LENGTH_ELEMENT);
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {

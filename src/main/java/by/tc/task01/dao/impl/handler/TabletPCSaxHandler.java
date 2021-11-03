@@ -6,17 +6,12 @@ import org.xml.sax.Attributes;
 import java.util.Arrays;
 import java.util.List;
 
+import static by.tc.task01.dao.impl.constant.XmlElementConstants.*;
+
 /**
  * TabletPCSaxHandler
  */
 public class TabletPCSaxHandler extends AbstractAppliancesSaxHandler {
-    private static final String TABLETPC_ELEMENT = "tabletPC";
-    private static final String ID_ELEMENT = "id";
-    private static final String DISPLAY_INCHES_ELEMENT = "display_inches";
-    private static final String MEMORY_ROM_ELEMENT = "memory_rom";
-    private static final String FLASH_MEMORY_CAPACITY_ELEMENT = "flash_memory_capacity";
-    private static final String COLOR_ELEMENT = "color";
-    private static final String BATTERY_CAPACITY_ELEMENT = "battery_capacity";
 
     private boolean isTabletPCElement = false;
     private boolean isReadValue = false;

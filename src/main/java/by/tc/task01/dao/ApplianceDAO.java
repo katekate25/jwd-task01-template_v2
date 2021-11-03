@@ -9,4 +9,6 @@ public interface ApplianceDAO {
 
     List<Appliance> find(Criteria criteria);
 
+    boolean add(Appliance appliance);
+
 }

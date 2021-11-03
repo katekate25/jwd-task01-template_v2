@@ -1,8 +1,10 @@
 package by.tc.task01.entity;
 
+import java.io.Serializable;
+
 /**
- * Appliance
+ * Marker interface for appliances
  */
-public interface Appliance {
+public interface Appliance extends Serializable {
 
 }

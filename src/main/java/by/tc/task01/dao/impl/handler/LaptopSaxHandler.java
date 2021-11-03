@@ -7,18 +7,12 @@ import org.xml.sax.Attributes;
 import java.util.Arrays;
 import java.util.List;
 
+import static by.tc.task01.dao.impl.constant.XmlElementConstants.*;
+
 /**
  * LaptopSaxHandler
  */
 public class LaptopSaxHandler extends AbstractAppliancesSaxHandler {
-    private static final String LAPTOP_ELEMENT = "laptop";
-    private static final String ID_ELEMENT = "id";
-    private static final String BATTERY_CAPACITY_ELEMENT = "battery_capacity";
-    private static final String DISPLAY_INCHES_ELEMENT = "display_inches";
-    private static final String MEMORY_ROM_ELEMENT = "memory_rom";
-    private static final String SYSTEM_MEMORY_ELEMENT = "system_memory";
-    private static final String OS_ELEMENT = "os";
-    private static final String CPU_ELEMENT = "cpu";
 
     private boolean isLaptopElement = false;
     private boolean isReadValue = false;

@@ -6,19 +6,15 @@ import org.xml.sax.Attributes;
 import java.util.Arrays;
 import java.util.List;
 
+import static by.tc.task01.dao.impl.constant.XmlElementConstants.*;
+
+
 /**
  * OvenSaxHandler
  */
 public class OvenSaxHandler extends AbstractAppliancesSaxHandler
 {
-    private static final String OVEN_ELEMENT = "oven";
-    private static final String ID_ELEMENT = "id";
-    private static final String CAPACITY_ELEMENT = "capacity";
-    private static final String POWER_CONSUMPTION_ELEMENT = "power_consumption";
-    private static final String WEIGHT_ELEMENT = "weight";
-    private static final String DEPTH_ELEMENT = "depth";
-    private static final String HEIGHT_ELEMENT = "height";
-    private static final String WIDTH_ELEMENT = "width";
+
     private boolean isOvenElement = false;
     private boolean isReadValue = false;
     private String currentValue = null;
