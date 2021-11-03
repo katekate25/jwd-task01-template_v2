@@ -1,5 +1,8 @@
 package by.tc.task01.entity.criteria;
 
+/**
+ * SearchCriteria
+ */
 public final class SearchCriteria {
 
     public static enum Oven {

@@ -2,6 +2,9 @@ package by.tc.task01.entity;
 
 import java.util.Objects;
 
+/**
+ * Refrigerator
+ */
 public class Refrigerator implements Appliance{
     private String id;
     private Integer freezerCapacity;

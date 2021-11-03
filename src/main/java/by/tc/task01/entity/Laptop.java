@@ -2,6 +2,9 @@ package by.tc.task01.entity;
 
 import java.util.Objects;
 
+/**
+ * Laptop
+ */
 public class Laptop implements Appliance {
 
     private String id;

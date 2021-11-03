@@ -8,6 +8,9 @@ import java.util.List;
 
 import static java.util.Arrays.asList;
 
+/**
+ *Validator
+ */
 public class Validator {
 
 	private static final List<String> supportedCriteriaSearchNames = asList(SearchCriteria.Laptop.class.getSimpleName(),

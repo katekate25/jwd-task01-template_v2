@@ -21,6 +21,9 @@ public class RefrigeratorSaxHandler extends AbstractAppliancesSaxHandler {
     private List<String> supportedElements = Arrays.asList(ID_ELEMENT, FREEZER_CAPACITY_ELEMENT,
             POWER_CONSUMPTION_ELEMENT, WEIGHT_ELEMENT, OVERALL_CAPACITY_ELEMENT, HEIGHT_ELEMENT, WIDTH_ELEMENT);
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
         if (REFRIGERATOR_ELEMENT.equalsIgnoreCase(qName)) {
@@ -31,6 +34,9 @@ public class RefrigeratorSaxHandler extends AbstractAppliancesSaxHandler {
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void characters(char[] ch, int start, int length) {
         if (isRefrigeratorElement && isReadValue) {
@@ -38,6 +44,9 @@ public class RefrigeratorSaxHandler extends AbstractAppliancesSaxHandler {
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void endElement(String uri, String localName, String qName) {
         if (REFRIGERATOR_ELEMENT.equalsIgnoreCase(qName)) {

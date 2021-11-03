@@ -22,13 +22,21 @@ public abstract class AbstractAppliancesSaxHandler extends DefaultHandler
       appliances.add(appliance);
    }
 
+   /**
+    * Get appliances
+    *
+    * @return appliances
+    */
    public List<Appliance> getAppliances()
    {
       return appliances;
    }
 
+   /**
+    * {@inheritdoc}
+    */
    @Override
-   public void startDocument() throws SAXException {
+   public void startDocument(){
       appliances = new ArrayList<>();
    }
 

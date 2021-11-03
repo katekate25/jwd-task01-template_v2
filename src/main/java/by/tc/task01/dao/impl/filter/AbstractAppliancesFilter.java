@@ -7,8 +7,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * AbstractAppliancesFilter
+ */
 public abstract class AbstractAppliancesFilter {
 
+    /**
+     * Filters appliances
+     *
+     * @param appliances list of appliances
+     * @param criteria criteria
+     * @return appliances
+     */
     public List<Appliance> filter(List<Appliance> appliances, Criteria criteria) {
         for(Map.Entry<String, Object> entry : criteria.getSearchParams().entrySet()) {
             appliances = appliances.stream()

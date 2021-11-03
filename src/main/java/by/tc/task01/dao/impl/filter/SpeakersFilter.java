@@ -6,6 +6,9 @@ import by.tc.task01.entity.criteria.SearchCriteria;
 
 import java.util.Objects;
 
+/**
+ * SpeakersFilter
+ */
 public class SpeakersFilter extends AbstractAppliancesFilter {
 
     @Override

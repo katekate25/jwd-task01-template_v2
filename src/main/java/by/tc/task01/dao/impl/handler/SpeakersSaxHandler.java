@@ -21,6 +21,9 @@ public class SpeakersSaxHandler extends AbstractAppliancesSaxHandler {
     private List<String> supportedElements = Arrays.asList(ID_ELEMENT, POWER_CONSUMPTION_ELEMENT,
             NUMBER_OF_SPEAKERS_ELEMENT, FREQUENCY_RANGE_ELEMENT, CORD_LENGTH_ELEMENT);
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
         if (SPEAKERS_ELEMENT.equalsIgnoreCase(qName)) {
@@ -31,6 +34,9 @@ public class SpeakersSaxHandler extends AbstractAppliancesSaxHandler {
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void characters(char[] ch, int start, int length) {
         if (isSpeakersElement && isReadValue) {
@@ -38,6 +44,9 @@ public class SpeakersSaxHandler extends AbstractAppliancesSaxHandler {
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void endElement(String uri, String localName, String qName) {
         if (SPEAKERS_ELEMENT.equalsIgnoreCase(qName)) {

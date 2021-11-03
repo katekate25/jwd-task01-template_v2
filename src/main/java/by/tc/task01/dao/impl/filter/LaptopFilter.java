@@ -6,6 +6,9 @@ import by.tc.task01.entity.criteria.SearchCriteria;
 
 import java.util.Objects;
 
+/**
+ * LaptopFilter
+ */
 public class LaptopFilter extends AbstractAppliancesFilter {
 
     @Override

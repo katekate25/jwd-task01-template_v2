@@ -31,6 +31,10 @@ import by.tc.task01.dao.ApplianceDAO;
 import by.tc.task01.entity.criteria.Criteria;
 import by.tc.task01.dao.impl.exception.DAOException;
 
+/**
+ * ApplianceDAOImpl
+ */
+
 public class ApplianceDAOImpl implements ApplianceDAO {
 
     private static final String APPLIANCES_XML_FILE_NAME = "appliances_db.xml";
@@ -62,6 +66,9 @@ public class ApplianceDAOImpl implements ApplianceDAO {
         groupNameToFilterMap.put(VacuumCleaner.class.getSimpleName(), new VacuumCleanerFilter());
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public List<Appliance> find(Criteria criteria) {
         validateXMLAgainstXSD();
@@ -69,6 +76,9 @@ public class ApplianceDAOImpl implements ApplianceDAO {
         return groupNameToFilterMap.get(criteria.getGroupSearchName()).filter(appliances, criteria);
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public boolean add(Appliance appliance) {
         validateXMLAgainstXSD();

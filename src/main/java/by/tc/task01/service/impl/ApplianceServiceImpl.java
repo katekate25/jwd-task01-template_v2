@@ -9,7 +9,9 @@ import by.tc.task01.entity.criteria.Criteria;
 import by.tc.task01.service.ApplianceService;
 import by.tc.task01.service.validation.Validator;
 
-
+/**
+ *ApplianceServiceImpl
+ */
 public class ApplianceServiceImpl implements ApplianceService
 {
 	private final ApplianceDAO applianceDAO;

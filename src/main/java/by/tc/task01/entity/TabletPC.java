@@ -2,6 +2,9 @@ package by.tc.task01.entity;
 
 import java.util.Objects;
 
+/**
+ * TabletPC
+ */
 public class TabletPC implements Appliance {
     private String id;
     private Integer batteryCapacity;

@@ -3,7 +3,7 @@ package by.tc.task01.entity;
 import java.util.Objects;
 
 /**
- *
+ *VacuumCleaner
  */
 public class VacuumCleaner implements Appliance {
 

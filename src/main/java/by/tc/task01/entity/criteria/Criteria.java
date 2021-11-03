@@ -3,6 +3,9 @@ package by.tc.task01.entity.criteria;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Criteria
+ */
 public class Criteria {
 
 	private String groupSearchName;

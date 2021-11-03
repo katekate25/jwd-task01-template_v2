@@ -1,5 +1,8 @@
 package by.tc.task01.dao.impl.constant;
 
+/**
+ * Xml Element Constants
+ */
 public class XmlElementConstants {
 
     public static final String OVEN_ELEMENT = "oven";

@@ -22,6 +22,9 @@ public class OvenSaxHandler extends AbstractAppliancesSaxHandler
     private List<String> supportedElements = Arrays.asList(ID_ELEMENT, CAPACITY_ELEMENT, POWER_CONSUMPTION_ELEMENT,
             WEIGHT_ELEMENT, DEPTH_ELEMENT, HEIGHT_ELEMENT, WIDTH_ELEMENT);
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void startElement (String uri, String localName, String qName, Attributes attributes)
     {
@@ -34,7 +37,9 @@ public class OvenSaxHandler extends AbstractAppliancesSaxHandler
             isReadValue = true;
         }
     }
-
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void characters(char[] ch, int start, int length) {
         if (isOvenElement && isReadValue)
@@ -43,6 +48,9 @@ public class OvenSaxHandler extends AbstractAppliancesSaxHandler
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void endElement (String uri, String localName, String qName)
     {

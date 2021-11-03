@@ -10,6 +10,13 @@ public class ApplianceToDOMElementTransformer {
 
     private ApplianceToDOMElementTransformer() {}
 
+    /**
+     * Create element from appliance
+     *
+     * @param document document
+     * @param appliance appliance
+     * @return element
+     */
     public static Element createElementFromAppliance(Document document, Appliance appliance) {
         Element element = null;
         if (appliance instanceof Oven)

@@ -3,6 +3,9 @@ package by.tc.task01.entity;
 import java.util.Arrays;
 import java.util.Objects;
 
+/**
+ * Speakers
+ */
 public class Speakers implements Appliance{
     private String id;
     private Integer powerConsumption;

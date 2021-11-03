@@ -20,6 +20,9 @@ public class VacuumCleanerSaxHandler extends AbstractAppliancesSaxHandler {
     private final List<String> supportedElements = Arrays.asList(ID_ELEMENT, FILTER_TYPE_ELEMENT, POWER_CONSUMPTION_ELEMENT,
             BAG_TYPE_ELEMENT, WAND_TYPE_ELEMENT, MOTOR_SPEED_REGULATION_ELEMENT, CLEANING_WIDTH_ELEMENT);
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
         if (VACUUM_CLEANER_ELEMENT.equalsIgnoreCase(qName)) {
@@ -30,6 +33,9 @@ public class VacuumCleanerSaxHandler extends AbstractAppliancesSaxHandler {
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void characters(char[] ch, int start, int length) {
         if (isVacuumCleanerElement && isReadValue) {
@@ -37,6 +43,9 @@ public class VacuumCleanerSaxHandler extends AbstractAppliancesSaxHandler {
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void endElement(String uri, String localName, String qName) {
         if (VACUUM_CLEANER_ELEMENT.equalsIgnoreCase(qName)) {

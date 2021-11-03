@@ -4,6 +4,9 @@ import java.util.List;
 
 import by.tc.task01.entity.Appliance;
 
+/**
+ *PrintApplianceInfo
+ */
 public class PrintApplianceInfo {
 
 	private PrintApplianceInfo() {}

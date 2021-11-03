@@ -20,6 +20,9 @@ public class TabletPCSaxHandler extends AbstractAppliancesSaxHandler {
     private List<String> supportedElements = Arrays.asList(ID_ELEMENT, DISPLAY_INCHES_ELEMENT, MEMORY_ROM_ELEMENT,
             FLASH_MEMORY_CAPACITY_ELEMENT, COLOR_ELEMENT, BATTERY_CAPACITY_ELEMENT);
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void startElement (String uri, String localName, String qName, Attributes attributes)
     {
@@ -33,6 +36,9 @@ public class TabletPCSaxHandler extends AbstractAppliancesSaxHandler {
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void characters(char[] ch, int start, int length) {
         if (isTabletPCElement && isReadValue)
@@ -41,6 +47,9 @@ public class TabletPCSaxHandler extends AbstractAppliancesSaxHandler {
         }
     }
 
+    /**
+     * {@inheritdoc}
+     */
     @Override
     public void endElement (String uri, String localName, String qName)
     {

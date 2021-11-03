@@ -2,6 +2,9 @@ package by.tc.task01.entity;
 
 import java.util.Objects;
 
+/**
+ * Oven
+ */
 public class Oven implements Appliance {
 
     private String id;

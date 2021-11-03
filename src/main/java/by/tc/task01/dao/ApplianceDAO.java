@@ -5,6 +5,9 @@ import java.util.List;
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.criteria.Criteria;
 
+/**
+ * ApplianceDAO
+ */
 public interface ApplianceDAO {
 
     List<Appliance> find(Criteria criteria);
